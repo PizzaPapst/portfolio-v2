@@ -1,0 +1,29 @@
+@import url("primitives.css");
+
+:root{
+    --controls-default-height: var(--numbers-40);
+    --controls-minvalue-input-width: var(--numbers-40);
+    --controls-minvalue-input-height: var(--numbers-40);
+    --controls-maxvalue-input-height: var(--numbers-40);
+    --controls-maxvalue-input-width: 650px;
+    --controls-maxvalue-button-width: 250px;
+    --spacing-medium: var(--numbers-8);
+    --spacing-small: var(--numbers-4);
+    --spacing-xsmall: var(--numbers-2);
+    --spacing-large: var(--numbers-16);
+    --padding-xsmall: var(--numbers-2);
+    --padding-small: var(--numbers-4);
+    --padding-medium: var(--numbers-8);
+    --padding-large: var(--numbers-16);
+    --cornerradius-xsmall: var(--numbers-2);
+    --cornerradius-small: var(--numbers-4);
+    --cornerradius-medium: var(--numbers-8);
+    --cornerradius-large: var(--numbers-16);
+    --cornerradius-round: var(--numbers-999);
+    --controls-components-exceptions-avatar: var(--numbers-128);
+    --controls-default-width: var(--numbers-40);
+    --padding-xlarge: var(--numbers-32);
+    --controls-components-exceptions-header-height: 96px;
+    --padding-xxlarge: var(--numbers-56);
+    --spacing-xlarge: var(--numbers-32);
+}

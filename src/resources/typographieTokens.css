@@ -1,0 +1,14 @@
+@import url("primitives.css");
+
+:root{
+    --line-height-default: var(--numbers-28);
+    --paragraph-spacing-default: var(--numbers-14);
+    --font-size-default: var(--numbers-20);
+    --letter-spacing-default: 0px;
+    --font-size-xxlarge: var(--numbers-48);
+    --font-size-xlarge: var(--numbers-32);
+    --font-size-large: var(--numbers-24);
+    --font-size-small: var(--numbers-16);
+    --line-height-large: var(--numbers-36);
+}
+

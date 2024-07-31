@@ -1,0 +1,16 @@
+@import url("../resources/typographieTokens.css");
+
+*{
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: var(--font-size-xxlarge);
+}
+
+
+.Subinfo{
+    font-weight: 400;
+    font-size: var( --font-size-small);
+}

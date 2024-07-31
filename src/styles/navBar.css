@@ -1,0 +1,66 @@
+@import url("../resources/colorTokens.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    padding: 0 32px;
+    width: 100%;
+    
+}
+
+.logo{
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    gap: 16px;
+    
+}
+
+.navItem{
+    width: 100px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    a{
+        text-decoration: none;
+        align-self: stretch;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-default);
+    }
+}
+
+.navItem:hover{
+    background-color: var(--surface-hover);
+}
+
+.navItem:active{
+    background-color: var(--surface-pressed);
+    
+}
+
+a:focus-visible{
+    border: 2px solid var(--border-focused);
+    border-radius: 4px;
+    outline: none;
+}

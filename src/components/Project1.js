@@ -1,5 +1,5 @@
 import React from "react"
-import '../styles/project.css';
+import '../styles/project1.css';
 import '../styles/textStyles.css';
 import device from '../images/device-project1.png';
 

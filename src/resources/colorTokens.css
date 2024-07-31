@@ -21,7 +21,7 @@
     --surface-project1-start: var(--colors-blue-200);
     --surface-project1-end: var(--colors-blue-100);
     --text-onproject1: var(--colors-neutrals-grey-grey-600);
-    --text-onproject1-subinfo: var(--colors-neutrals-grey-grey-500);
+    --text-onproject1-subtitle: var(--colors-neutrals-grey-grey-500);
     --border-project1-focused: var(--colors-orange-100);
     --border-table-default: var(--colors-neutrals-grey-grey-100);
     --surface-table-alternation: var(--colors-neutrals-white-white-200);

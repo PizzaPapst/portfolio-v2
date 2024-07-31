@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import fire from './images/fire.svg';
 import ai from './images/ai.svg';
 import cloud from './images/cloud.svg';
@@ -7,6 +6,7 @@ import pencil from './images/pencil.svg';
 import star from './images/star.svg';
 import Navbar from './components/NavBar';
 import Avatar from './components/Avatar'
+import Project1 from './components/Project1'
 import './App.css';
 import './styles/textStyles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,6 +14,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, faTwitter, faFontAwesome)
+
 
 function App() {
   return (
@@ -42,22 +43,8 @@ function App() {
         </div>
       </div>
       <div className='Content'>
-
+          <Project1/>
       </div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }

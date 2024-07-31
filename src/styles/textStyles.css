@@ -12,5 +12,21 @@ h1{
 
 .Subinfo{
     font-weight: 400;
-    font-size: var( --font-size-small);
+    font-size: var(--font-size-small);
+}
+
+.ProjectTitle{
+    font-weight: bold;
+    font-size: var( --font-size-large);
+    line-height: var(--line-height-large);
+}
+
+.ImgTitle{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.SubTitle{
+    font-weight: 400;
+    font-size: 14px;
 }

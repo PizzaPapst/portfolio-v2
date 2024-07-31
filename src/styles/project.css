@@ -1,0 +1,101 @@
+@import url("../resources/colorTokens.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .Project{
+    display: flex;
+    gap: 16px;
+ }
+
+.Project-Info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: fit-content;
+}
+
+.ProjectTitle{
+    width: 300px;
+}
+
+.AdditionalInfo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--text-subinfo);
+}
+
+.DividerCircle{
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: var(--surface-divider);
+}
+
+.DividerContainer{
+    width: fit-content;
+    height: 100%;
+    padding-top: 56px;
+   
+}
+
+.DividerProject{
+    width: 60px;
+    height: 6px;
+    background-color: var(--surface-project1-start);
+    
+}
+
+.ImgContainer{
+    background: linear-gradient(90deg, var(--surface-project1-start), var(--surface-project1-end));
+    width: 620px;
+    height: 413px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Device{
+    width: 300px;
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center left;
+}
+
+.ImgContainer:hover .Device {
+    transform: scale(1.1666);
+}
+
+.ImgContainer:hover{
+    cursor: pointer;
+}
+
+.ImgContainer:active{
+    background-color: var(--surface-pressed);
+}
+
+.ImgContainer:focus-visible{
+    
+}
+
+.ImgTitleContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    left: 325px;
+    top: 174px;
+}
+
+.ImgTitle{
+    color: var(--text-onproject1);
+}
+
+.SubTitle{
+    color: var(--text-onproject1-subtitle);
+}

@@ -62,8 +62,12 @@
 }
 
 .Content{
-  height: 500px;
   background-color: var(--surface-bg-alternation);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+  padding: 40px 128px 40px 128px;
 }
 
 .bg-icon{

@@ -1,14 +1,14 @@
-import fire from './images/fire.svg';
-import ai from './images/ai.svg';
-import cloud from './images/cloud.svg';
-import gear from './images/gear.svg';
-import pencil from './images/pencil.svg';
-import star from './images/star.svg';
-import Navbar from './components/NavBar';
-import Avatar from './components/Avatar'
-import Project1 from './components/Project1'
-import './App.css';
-import './styles/textStyles.css';
+import fire from '../images/fire.svg';
+import ai from '../images/ai.svg';
+import cloud from '../images/cloud.svg';
+import gear from '../images/gear.svg';
+import pencil from '../images/pencil.svg';
+import star from '../images/star.svg';
+import Navbar from '../components/NavBar';
+import Avatar from '../components/Avatar'
+import Project1 from '../components/Project1'
+import '../styles/Work.css';
+import '../styles/textStyles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'

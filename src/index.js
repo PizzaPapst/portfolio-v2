@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Work from './pages/Work';
+import Bachelorarbeit from "./pages/Bachelorarbeit"
+import About from "./pages/About"
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+let app
+switch (window.location.pathname){
+  case "/":
+    app = <Work/>
+    break
+  case "/Work":
+    app = <Work/>
+    break
+  case "/About":
+    app = <About/>
+
+}
 root.render(
   <React.StrictMode>
-    <App />
+    {app}
   </React.StrictMode>
 );
 

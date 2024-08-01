@@ -8,10 +8,22 @@ export default function Navbar() {
             <h2 className="logo">MB</h2>
             <div>
                 <ul className="links">
-                    <li className="navItem"><a href="/Work">Work</a></li>
-                    <li className="navItem"><a href="/About">About</a></li>
+                    <Link href="/Work">Work</Link>
+                    <Link href="/About">About</Link>
                 </ul>
             </div>
         </nav>
+    )
+}
+
+function Link ({href, children}){
+    const path = window.location.pathname
+
+    return(
+        <li className={ path === href ? 'navItem selected' : "navItem"}>
+            <a href={href}>
+                {children}
+            </a>
+        </li>
     )
 }

@@ -14,13 +14,13 @@
 }
 
 .Intro{
-  height: 100vh;
   align-self: stretch;
   display: flex;
   flex-direction: column;
   gap: 64px;
   justify-content: flex-start;
   align-items: center;
+  padding: 32px 0;
 }
 
 .Info-container{

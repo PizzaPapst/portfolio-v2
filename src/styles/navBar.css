@@ -64,3 +64,7 @@ a:focus-visible{
     border-radius: 4px;
     outline: none;
 }
+
+.selected{
+    border-top: 4px solid var(--border-selected);
+}

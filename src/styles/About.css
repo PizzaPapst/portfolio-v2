@@ -1,0 +1,34 @@
+.about-Content{
+    background-color: var(--surface-bg-alternation);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    padding: 40px 128px 40px 128px;
+  }
+
+  .about-Intro{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .Text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    
+  }
+
+  .Paragraphs{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p{
+        max-width: 650px;
+    }
+  }
+

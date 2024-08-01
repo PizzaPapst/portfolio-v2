@@ -67,7 +67,7 @@
   flex-direction: column;
   align-items: center;
   gap: 96px;
-  padding: 40px 128px 40px 128px;
+  padding: 32px 128px;
 }
 
 .bg-icon{

@@ -1,0 +1,49 @@
+@import url("../resources/colorTokens.css");
+
+.carousel-next-btn{
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    background-color: transparent;
+}
+
+.carousel-prev-btn{
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    background-color: transparent;
+}
+
+.carousel-dots-container{
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel--dot{
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: var(--colors-neutrals-grey-grey-100);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.carousel--dot--active{
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: linear-gradient(90deg, var(--surface-project1-start), var(--surface-project1-end));
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+

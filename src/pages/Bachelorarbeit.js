@@ -6,8 +6,14 @@ import SubHeadline from "../components/SubHeadline"
 import Textblock from "../components/Textblock"
 import TableRow from "../components/TableRow";
 import kellyStarret from "../images/kelly-starret.webp"
+import Carousel from "../components/Carousel";
 
 export default function Bachelorarbeit() {
+    const carousel1Data = [
+        {url: "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+        {url: "https://images.unsplash.com/photo-1475189778702-5ec9941484ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+    ]
+
     return (
         <div>
             <div className="hero">
@@ -98,6 +104,8 @@ export default function Bachelorarbeit() {
                 <section className="section--alternation">
                     <div className="section--content">
                         <h2>Konzeption</h2>
+                        <Carousel imgs={carousel1Data} />   
+                        
 
                         
                     </div>

@@ -1,0 +1,89 @@
+@import url("../resources/colorTokens.css");
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(90deg, var(--surface-project1-start), var(--surface-project1-end));
+}
+
+.hero--device{
+    width: 400px;
+    filter: drop-shadow(0 0 16px #618DB5);
+
+}
+
+.bachelor--content{
+    width: 100%;
+}
+
+section{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section--default{
+
+}
+
+.section--alternation{
+    background-color: var(--surface-bg-alternation);
+}
+
+.section--content{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.subsection{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.background{
+    flex-direction: row;
+    gap: 32px;
+}
+
+.kelly{
+    width: 33%;
+}
+
+.table{
+    margin-top: 16px;
+
+}
+
+.tableRow{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--border-table-default);
+}
+
+.tableCell{
+    padding: 8px;
+    display: flex;
+    width: 100%;
+}
+
+.table--header{
+    border-bottom: 1px solid var(--border-table-start-ende);
+}
+
+.table--alternation{
+    background-color: var(--surface-table-alternation)
+}
+
+.table--end{
+    border-bottom: 1px solid var(--border-table-start-ende);
+}

@@ -2,6 +2,7 @@ import React from "react"
 import '../styles/project1.css';
 import '../styles/textStyles.css';
 import device from '../images/device-project1.png';
+import { Link } from "react-router-dom";
 
 export default function Project() {
     return (
@@ -17,13 +18,13 @@ export default function Project() {
             <div className="DividerContainer">
                 <div className="DividerProject"></div>
             </div>
-            <div className="ImgContainer">
+            <Link to="/bachelorarbeit" className="ImgContainer">
                 <img alt="Device" className="Device" src={device}/>
                 <div className="ImgTitleContainer">
                     <p className="ImgTitle">Pausenhelfer</p>
                     <p className="SubTitle">Bringt Bewegung in deinen Arbeitsalltag</p>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }

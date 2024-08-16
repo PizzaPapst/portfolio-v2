@@ -17,11 +17,19 @@ nav{
 }
 
 .logo{
-    align-self: stretch;
-    text-align: center;
+    width: 64px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.logo:focus-visible{
+    border: 2px solid var(--border-focused);
+    border-radius: 4px;
+    outline: none;
 }
 
 .links{
@@ -38,33 +46,36 @@ nav{
     align-items: center;
     border-radius: 4px;
     box-sizing: border-box;
-
-    a{
-        text-decoration: none;
-        align-self: stretch;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--text-default);
-    }
+    text-decoration: none;
+    color: var(--text-default);
+    padding: 4px;
 }
 
-.navItem:hover{
+.navItem:hover .itemWrapper{
     background-color: var(--surface-hover);
 }
 
-.navItem:active{
+.navItem:active .itemWrapper{
     background-color: var(--surface-pressed);
     
 }
 
-a:focus-visible{
+.navItem:focus-visible {
     border: 2px solid var(--border-focused);
     border-radius: 4px;
     outline: none;
+    padding: 2px;
 }
 
-.selected{
+.selected .itemWrapper{
     border-top: 4px solid var(--border-selected);
+}
+
+.itemWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }

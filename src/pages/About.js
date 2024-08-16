@@ -1,5 +1,4 @@
 import React from "react"
-import Navbar from "../components/NavBar";
 import '../styles/About.css';
 import aboutImg from '../images/aboutImg.png';
 import '../styles/textStyles.css';
@@ -7,7 +6,7 @@ import '../styles/textStyles.css';
 export default function About() {
     return (
         <div>
-            <Navbar/>
+            
             <div className="about-Content">
                 <div className="about-Intro">
                     <img alt="Maik" src={aboutImg}/>

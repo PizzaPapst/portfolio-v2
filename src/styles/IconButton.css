@@ -1,0 +1,38 @@
+.iconButton{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.iconButton:hover{
+    background-color: var(--surface-hover);
+}
+
+.iconButton:active{
+    background-color: var(--surface-pressed);
+    
+}
+
+.iconButton:focus-visible {
+    border: 2px solid var(--border-focused);
+    outline: none;
+}
+
+.iconButton-iconContainer{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconButton-icon{
+    color: var(--icon-default);
+    font-size: 20px ;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/carousel.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import IconButton from './IconButton';
 
 function Carousel(props) {
   const {imgs} = props
@@ -43,13 +43,9 @@ function Carousel(props) {
         <div style={sliderStyles}>
         </div>
         <div className='carousel-dots-container'>
-            <button className="carousel-prev-btn" onClick={goToPrev}>
-                <FontAwesomeIcon icon="fa-solid fa-arrow-left" />
-            </button>
-            {dots}
-            <button className="carousel-next-btn" onClick={goToNext}>
-                <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-            </button>
+          <IconButton icon="fa-solid fa-arrow-left" handleClick={goToPrev} iconColor="#666666"/>
+          {dots}
+          <IconButton icon="fa-solid fa-arrow-right" handleClick={goToNext} iconColor="#666666"/>
         </div>
     </div>
   )

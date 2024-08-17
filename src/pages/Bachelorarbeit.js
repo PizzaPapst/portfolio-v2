@@ -7,6 +7,7 @@ import Textblock from "../components/Textblock"
 import TableRow from "../components/TableRow";
 import kellyStarret from "../images/kelly-starret.webp"
 import Carousel from "../components/Carousel";
+import IconButton from "../components/IconButton";
 
 export default function Bachelorarbeit() {
     const carousel1Data = [
@@ -104,10 +105,8 @@ export default function Bachelorarbeit() {
                 <section className="section--alternation">
                     <div className="section--content">
                         <h2>Konzeption</h2>
-                        <Carousel imgs={carousel1Data} />   
-                        
-
-                        
+                        <Carousel imgs={carousel1Data} />  
+                          
                     </div>
                 </section>
 

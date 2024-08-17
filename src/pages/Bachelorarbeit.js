@@ -2,12 +2,14 @@ import React from "react"
 import '../styles/textStyles.css';
 import '../styles/bachelorarbeit.css';
 import device from '../images/device.png';
+import vsCodeLogo from '../images/visualStudioIcon.png';
+import myCode from '../images/myCode.png';
 import SubHeadline from "../components/SubHeadline"
 import Textblock from "../components/Textblock"
 import TableRow from "../components/TableRow";
 import kellyStarret from "../images/kelly-starret.webp"
 import Carousel from "../components/Carousel";
-import IconButton from "../components/IconButton";
+import KPI from "../components/KPI";
 
 export default function Bachelorarbeit() {
     const carousel1Data = [
@@ -105,26 +107,103 @@ export default function Bachelorarbeit() {
                 <section className="section--alternation">
                     <div className="section--content">
                         <h2>Konzeption</h2>
-                        <Carousel imgs={carousel1Data} />  
+                        <div className="subsection">
+                            <SubHeadline text="Technisches System" />
+                            <Textblock text="Ich habe mich dazu entschieden ein Google Chrome Plugin zu entwickeln, 
+                                um möglichst vielen Nutzern Zugang zu der Anwendung zu gewähren. Ebenfalls konnte 
+                                herausgefunden werden, dass der Browser im Arbeitsalltag eine immer wichtigere Rolle 
+                                spielt und in nahezu allen Berufen stark genutzt wird. " />
+                        </div>
+
+                        <div className="subsection">
+                            <SubHeadline text="Erste Iteration" />
+                            <Textblock text="In einer ersten Iteration wurden Skizzen erstellt, um Entwürfe der 
+                                Idee, der Informationsdarstellung sowie der Navigation festzuhalten. 
+                                Anschließend wurden Personen aus der Zielgruppe unter Vorlage der Skizzen zu der 
+                                Idee befragt und um Feedback gebeten. Diese Vorgehensweise wurde in jeder 
+                                Iteration wiederholt, um noch während des Designprozesses Feedback des Nutzers 
+                                einbeziehen zu können." />
+                            <Carousel imgs={carousel1Data} />
+                        </div>
+
+                        <div className="subsection">
+                            <SubHeadline text="Zweite/Dritte Iteration" />
+                            <Textblock text="Während der zweiten und dritten Iteration wurden Wireframes in Grauabstufungen 
+                                mit dem Programm Figma erstellt. Ziel der Wireframes war es Verbesserungen einzuarbeiten 
+                                und erneut bewerten zu lassen, ohne dass die Testpersonen dabei über visuelle Details 
+                                diskutieren, sondern das Konzept und die Inhalte der Anwendung bewerten." />
+                            <Carousel imgs={carousel1Data} />
+                        </div>
+
+                        <div className="subsection">
+                            <SubHeadline text="Vierte (finale) Iteration" />
+                            <Textblock text="Erst in der finalen vierten Iteration wurde die Anwendung visuell ausgestaltet. 
+                                Dazu wurde eine Farbpalette definiert, Schriftarten wurden festgelegt, ein 
+                                Logo wurde erstellt und weitere Ressourcen wurden festgehalten. " />
+                            <Carousel imgs={carousel1Data} />
+                        </div>
+                          
                           
                     </div>
                 </section>
 
                 <section className="section--default">
                     <div className="section--content">
+                        <h2>Implementierung</h2>
+                        <div className="subsection bachelorarbeit--implementierung1">
+                            <Textblock text="Der Prototyp aus der vierten Iteration wurde mit Verwendung von 
+                                HTML, CSS, JavaScript und dem Framework D3.js implementiert. Es musste auf die 
+                                Systemarchitektur einer Google Chrome Erweiterung geachtet werden, um ein 
+                                lauffähiges Plugin entwickeln zu können. Eine Besonderheit die es bei der 
+                                Implementierung gab, war das Einbinden eines Daten Trackings, welches Eingaben der 
+                                Nutzer bei Verwendung der Anwendung speichert, um in einer abschließenden Evaluation 
+                                den Erfolg der Anwendung bewerten zu können." />
+                                <div style={({position: "relative"})}>
+                                    <img src={myCode} className="bachelorarbeit--myCodeImg" />
+                                    <img src={vsCodeLogo} className="bachelorarbeit--vsCodeImg" />
+                                </div>
+                            
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <section className="section--default">
+                    <div className="section--content">
+                        <h2>Evaluation</h2>
+                        <div className="subsection">
+                            <Textblock text="Abschließend wurde eine Evaluation durchgeführt, um Usability 
+                                Probleme zu finden und den Erfolg der Anwendung zu bewerten. 
+                                Es konnten sieben Teilnehmer gefunden werden welche das Plugin über einen 
+                                Zeitraum von einer Woche bei ihrer Arbeit genutzt haben." />
+                        </div>
+                        <div className="subsection">
+                            <SubHeadline text="Ergebnisse" />
+                            <Textblock text="Die Anwendung konnte zu mehr Bewegung, sowie zu mehr Zufriedenheit 
+                                bezüglich des Sitzverhaltens beitragen. Ein SUS-Score verdeutlicht, dass eine 
+                                solide, aber verbessungswürdige Software vorliegt (mehr Infos in der Bachelorarbeit)." />
+                            <div className="bachelorarbeit--kpis">
+                                <KPI kpi="33%" text="mehr Bewegung" />
+                                <KPI kpi="20%" text="mehr Zufriedenheit" />
+                                <KPI kpi="68.8" text="SUS-Score" />
+                            </div>
+                        </div>
                         
                     </div>
                 </section>
 
                 <section className="section--default">
                     <div className="section--content">
-                        
-                    </div>
-                </section>
-
-                <section className="section--default">
-                    <div className="section--content">
-                        
+                        <div className="subsection">
+                            <h2>Schlusswort</h2>
+                            <Textblock text="Vielen Dank für das Interesse an meiner Arbeit! Auf dieser Seite wurde meine 
+                                Bachelorarbeit stark zusammengefasst und sich auf die zentralen Ergebnisse konzentriert. 
+                                Die Bachelorarbeit enthält viele weitere Methoden wie beispielsweise Personas, Szenarien oder 
+                                Nudging (Methodik, um das ausführen einer Handlung wahrscheinlicher zu machen). 
+                                Interessiert dich eines davon oder möchtest du die komplette Bachelorarbeit lesen, kannst du 
+                                diese herunterladen." />
+                        </div>
                     </div>
                 </section>
             </div>

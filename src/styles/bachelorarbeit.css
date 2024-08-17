@@ -56,7 +56,7 @@ section{
 }
 
 .kelly{
-    width: 33%;
+    height: 235px;
 }
 
 .table{
@@ -86,4 +86,41 @@ section{
 
 .table--end{
     border-bottom: 1px solid var(--border-table-start-ende);
+}
+
+.bachelorarbeit--implementierung1{
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+.bachelorarbeit--myCodeImg{
+    width: 350px;
+    
+}
+
+.bachelorarbeit--vsCodeImg{
+    position: absolute;
+    left: 320px;
+    top: -40px;
+    width: 96px;
+    height: 96px;
+    transform: rotate(25deg);
+    filter: drop-shadow(2px 2px 16px rgba(0, 0, 0, 0.15));
+}
+
+.test{
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    background-color: aqua;
+    background-image: url(../images/myCode.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bachelorarbeit--kpis{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }

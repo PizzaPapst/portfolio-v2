@@ -10,12 +10,23 @@ import TableRow from "../components/TableRow";
 import kellyStarret from "../images/kelly-starret.webp"
 import Carousel from "../components/Carousel";
 import KPI from "../components/KPI";
+import PrimaryButton from "../components/PrimaryButton";
 
 export default function Bachelorarbeit() {
     const carousel1Data = [
         {url: "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
         {url: "https://images.unsplash.com/photo-1475189778702-5ec9941484ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
     ]
+
+    function downloadBachelorarbeit(){
+        const filePath = "bacheloarbeit.pdf";
+        const a = document.createElement("a");
+        a.href = filePath;
+        a.download = "dokument.png";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
 
     return (
         <div>
@@ -204,6 +215,7 @@ export default function Bachelorarbeit() {
                                 Interessiert dich eines davon oder möchtest du die komplette Bachelorarbeit lesen, kannst du 
                                 diese herunterladen." />
                         </div>
+                            <PrimaryButton text="Bachelorarbeit herunterladen" handleClick={downloadBachelorarbeit}/>
                     </div>
                 </section>
             </div>

@@ -1,8 +1,12 @@
 import React from 'react'
+import '../styles/primaryButton.css';
 
-function PrimaryButton() {
+function PrimaryButton(props) {
+
   return (
-    <div>PrimaryButton</div>
+    <button className='primaryButton' onClick={props.handleClick}>
+        {props.text}
+    </button>
   )
 }
 

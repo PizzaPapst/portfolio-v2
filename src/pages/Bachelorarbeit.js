@@ -14,22 +14,44 @@ import PrimaryButton from "../components/PrimaryButton";
 
 export default function Bachelorarbeit() {
     const carousel1Data = [
-        {url: "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-        {url: "https://images.unsplash.com/photo-1475189778702-5ec9941484ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+        {url: "bachelorarbeit/Iteration1-1.jpg"},
+        {url: "bachelorarbeit/Iteration1-2.jpg"},
+        {url: "bachelorarbeit/Iteration1-3.jpg"},
+        {url: "bachelorarbeit/Iteration1-4.jpg"}
+    ]
+
+    const carousel2Data = [
+        {url: "bachelorarbeit/Iteration2-1.png"},
+        {url: "bachelorarbeit/Iteration2-2.png"},
+        {url: "bachelorarbeit/Iteration2-3.png"},
+        {url: "bachelorarbeit/Iteration2-4.png"},
+        {url: "bachelorarbeit/Iteration3-1.png"},
+        {url: "bachelorarbeit/Iteration3-2.png"},
+        {url: "bachelorarbeit/Iteration3-3.png"},
+        {url: "bachelorarbeit/Iteration3-4.png"},
+    ]
+
+    const carousel3Data = [
+        {url: "bachelorarbeit/Iteration4-1.png"},
+        {url: "bachelorarbeit/Iteration4-2.png"},
+        {url: "bachelorarbeit/Iteration4-3.png"},
+        {url: "bachelorarbeit/Iteration4-4.png"},
+        {url: "bachelorarbeit/Iteration4-5.png"},
+        {url: "bachelorarbeit/Iteration4-6.png"},
     ]
 
     function downloadBachelorarbeit(){
-        const filePath = "bacheloarbeit.pdf";
+        const filePath = "BA.pdf";
         const a = document.createElement("a");
         a.href = filePath;
-        a.download = "dokument.png";
+        a.download = "Bachelorarbeit_MaikBartels.pdf";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
     }
 
     return (
-        <div>
+        <div className="bachelorarbeit">
             <div className="hero">
                 <img className="hero--device" alt="" src={device}/>
             </div>
@@ -143,7 +165,7 @@ export default function Bachelorarbeit() {
                                 mit dem Programm Figma erstellt. Ziel der Wireframes war es Verbesserungen einzuarbeiten 
                                 und erneut bewerten zu lassen, ohne dass die Testpersonen dabei über visuelle Details 
                                 diskutieren, sondern das Konzept und die Inhalte der Anwendung bewerten." />
-                            <Carousel imgs={carousel1Data} />
+                            <Carousel imgs={carousel2Data} />
                         </div>
 
                         <div className="subsection">
@@ -151,7 +173,7 @@ export default function Bachelorarbeit() {
                             <Textblock text="Erst in der finalen vierten Iteration wurde die Anwendung visuell ausgestaltet. 
                                 Dazu wurde eine Farbpalette definiert, Schriftarten wurden festgelegt, ein 
                                 Logo wurde erstellt und weitere Ressourcen wurden festgehalten. " />
-                            <Carousel imgs={carousel1Data} />
+                            <Carousel imgs={carousel3Data} />
                         </div>
                           
                           
@@ -180,7 +202,7 @@ export default function Bachelorarbeit() {
                     </div>
                 </section>
 
-                <section className="section--default">
+                <section className="section--alternation">
                     <div className="section--content">
                         <h2>Evaluation</h2>
                         <div className="subsection">

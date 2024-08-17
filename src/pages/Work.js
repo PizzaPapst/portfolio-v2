@@ -17,7 +17,7 @@ library.add(fas, faTwitter, faFontAwesome)
 
 function Work() {
   return (
-    <div className="App">
+    <div className="Work">
       <div className='Intro'>
         <div className='Info-container'>
           <Avatar></Avatar>

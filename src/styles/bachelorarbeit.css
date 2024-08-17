@@ -1,6 +1,13 @@
 @import url("../resources/colorTokens.css");
 
 
+.bachelorarbeit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .hero{
     display: flex;
     justify-content: center;

@@ -40,7 +40,9 @@ function Carousel(props) {
 
     return (
     <div>
-        <div style={sliderStyles}>
+        {/* <div style={sliderStyles}></div> */}
+        <div className='carousel--imageContainer'>
+          <img src={imgs[currentIndex].url} className='carousel--image'/>
         </div>
         <div className='carousel-dots-container'>
           <IconButton icon="fa-solid fa-arrow-left" handleClick={goToPrev} iconColor="#666666"/>

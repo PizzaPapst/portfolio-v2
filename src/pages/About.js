@@ -5,12 +5,11 @@ import '../styles/textStyles.css';
 
 export default function About() {
     return (
-        <div>
-            
+        <div className="about">
             <div className="about-Content">
                 <div className="about-Intro">
                     <img alt="Maik" src={aboutImg}/>
-                    <div className="Text">
+                    <div className="about-text">
                         <h2>Hi, ich bin Maik 👋</h2>
                         <div className="Paragraphs">
                             <p>Moin zusammen, ich bin 25 Jahre alt und wohne aktuell in Hamburg. In meiner Freizeit betreibe oder schaue ich gerne Sport.</p>

@@ -3,19 +3,10 @@ import '../styles/carousel.css';
 import IconButton from './IconButton';
 
 function Carousel(props) {
-  const {imgs} = props
+  const {data} = props
   const [currentIndex, setCurrentIndex] = React.useState(0)
 
-  const sliderStyles = {
-    width: "100%",
-    height: "450px",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundImage: `url(${imgs[currentIndex].url})`,
-    borderRadius: "8px",
-  } 
-
-  const dots = imgs.map((img, imgIndex)=>{
+  const dots = data.map((img, imgIndex)=>{
     return (
         <button onClick={()=>jumpToImg(imgIndex)} className={imgIndex === currentIndex ? "carousel--dot--active" : "carousel--dot"}></button>
     )
@@ -24,12 +15,12 @@ function Carousel(props) {
   // handling functions
   function goToPrev(){
     const isFirstImg = currentIndex === 0
-    const newIndex = isFirstImg ? imgs.length-1 : currentIndex -1
+    const newIndex = isFirstImg ? data.length-1 : currentIndex -1
     setCurrentIndex(newIndex)
   }
 
   function goToNext(){
-    const isLastImg = currentIndex === imgs.length - 1
+    const isLastImg = currentIndex === data.length - 1
     const newIndex = isLastImg ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
   }
@@ -38,11 +29,12 @@ function Carousel(props) {
     setCurrentIndex(imgIndex)
   }
 
+
     return (
     <div>
-        {/* <div style={sliderStyles}></div> */}
         <div className='carousel--imageContainer'>
-          <img src={imgs[currentIndex].url} className='carousel--image'/>
+          <p className='Subinfo'>{data[currentIndex].desc}</p>
+          <img src={data[currentIndex].url} className='carousel--image'/>
         </div>
         <div className='carousel-dots-container'>
           <IconButton icon="fa-solid fa-arrow-left" handleClick={goToPrev} iconColor="#666666"/>

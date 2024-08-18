@@ -13,33 +13,72 @@ import KPI from "../components/KPI";
 import PrimaryButton from "../components/PrimaryButton";
 
 export default function Bachelorarbeit() {
+    // Carousel data
     const carousel1Data = [
-        {url: "bachelorarbeit/Iteration1-1.jpg"},
-        {url: "bachelorarbeit/Iteration1-2.jpg"},
-        {url: "bachelorarbeit/Iteration1-3.jpg"},
-        {url: "bachelorarbeit/Iteration1-4.jpg"}
+        {
+            url: "bachelorarbeit/Iteration1-1.jpg",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration1-2.jpg",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration1-3.jpg",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration1-4.jpg",
+            desc: "Dashboard"   
+        }
     ]
 
     const carousel2Data = [
-        {url: "bachelorarbeit/Iteration2-1.png"},
-        {url: "bachelorarbeit/Iteration2-2.png"},
-        {url: "bachelorarbeit/Iteration2-3.png"},
-        {url: "bachelorarbeit/Iteration2-4.png"},
-        {url: "bachelorarbeit/Iteration3-1.png"},
-        {url: "bachelorarbeit/Iteration3-2.png"},
-        {url: "bachelorarbeit/Iteration3-3.png"},
-        {url: "bachelorarbeit/Iteration3-4.png"},
+        {
+            url: "bachelorarbeit/Iteration3-1.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration3-2.png",
+            desc: "Dashboard"   
+        },
+        
+        {url: "bachelorarbeit/Iteration3-3.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration3-4.png",
+            desc: "Dashboard"   
+        },
     ]
 
     const carousel3Data = [
-        {url: "bachelorarbeit/Iteration4-1.png"},
-        {url: "bachelorarbeit/Iteration4-2.png"},
-        {url: "bachelorarbeit/Iteration4-3.png"},
-        {url: "bachelorarbeit/Iteration4-4.png"},
-        {url: "bachelorarbeit/Iteration4-5.png"},
-        {url: "bachelorarbeit/Iteration4-6.png"},
+        {
+            url: "bachelorarbeit/Iteration4-1.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration4-2.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration4-3.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration4-4.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration4-5.png",
+            desc: "Dashboard"   
+        },
+        {
+            url: "bachelorarbeit/Iteration4-6.png",
+            desc: "Dashboard"   
+        },
     ]
-
+    // Download function for the primaryButton
     function downloadBachelorarbeit(){
         const filePath = "BA.pdf";
         const a = document.createElement("a");
@@ -49,6 +88,11 @@ export default function Bachelorarbeit() {
         a.click();
         document.body.removeChild(a);
     }
+
+    // Scroll to top
+    React.useEffect(()=>{
+        window.scrollTo(0,0)
+    }, [])
 
     return (
         <div className="bachelorarbeit">
@@ -100,13 +144,15 @@ export default function Bachelorarbeit() {
 
                 <section className="section--default">
                     <div className="section--content">
-                        <h2>Analyse</h2>
-                        <Textblock text="Zum Beginn der Bachelorarbeit wurde eine Analyse durchgeführt. 
-                            Dazu wurden wissenschaftliche Librarys und Suchmaschienen wie Scopus, 
-                            ACM Digital Library und Google Scholar nach Anwendungen mit ähnlichem Anwendungszweck durchsucht. 
-                            Zusätzlich wurde eine online Umfrage an der Universität zu Lübeck durchgeführt, 
-                            um weitere Informationen über Bedürfnisse, Ziele und aktuelles 
-                            Verhalten der Nutzer zu erhalten."/>
+                        <div className="subsection">
+                            <h2>Analyse</h2>
+                            <Textblock text="Zum Beginn der Bachelorarbeit wurde eine Analyse durchgeführt. 
+                                Dazu wurden wissenschaftliche Librarys und Suchmaschienen wie Scopus, 
+                                ACM Digital Library und Google Scholar nach Anwendungen mit ähnlichem Anwendungszweck durchsucht. 
+                                Zusätzlich wurde eine online Umfrage an der Universität zu Lübeck durchgeführt, 
+                                um weitere Informationen über Bedürfnisse, Ziele und aktuelles 
+                                Verhalten der Nutzer zu erhalten."/>
+                        </div>
                         <div className="subsection">
                             <SubHeadline text="Teilnehmerinformation der Umfrage" />
                             <Textblock text="Bei der Umfrage haben 104 Teilnehmer teilgenommen, davon waren 85 männlich, 15 weiblich und 4 divers." />
@@ -146,6 +192,20 @@ export default function Bachelorarbeit() {
                                 um möglichst vielen Nutzern Zugang zu der Anwendung zu gewähren. Ebenfalls konnte 
                                 herausgefunden werden, dass der Browser im Arbeitsalltag eine immer wichtigere Rolle 
                                 spielt und in nahezu allen Berufen stark genutzt wird. " />
+                        </div> 
+                        <div className="subsection">
+                            <SubHeadline text="Grundidee" />
+                            <Textblock text="Ich konnte herausfinden, dass abrupte und aufdringliche Unterbrechungen 
+                                nach Ablauf einer bestimmten Zeit bei einem Großteil der Teilnehmer (nicht bei 
+                                allen, einige fanden diese Vorgehensweise auch gut) nicht zum Durchführen einer 
+                                Bewegungspause führen wird. Aus diesem Grund war die Grundidee, immer wenn der 
+                                Nutzer einen neuen Tab (im Browser) öffnet, ein Dashboard anzuzeigen, welches aktuelle 
+                                Statistiken zu dem Sitzverhalten des Tages bereithält, mit dem Ziel, dass dadurch 
+                                eigenständig eine Pause durchgeführt wird. Weiterhin gibt es eine klassische Zeitbasierte 
+                                Erinnerung. Die Einstellungen erlauben dem Nutzer, das Plugin zu konfigurieren. " />
+                                
+                            <Textblock text="Insgesamt gibt es somit 4 Komponenten des Plugins: Dashboard, 
+                                Zeitbasierte Erinnerung, Einstellungen und Popup (Chrome Einstiegspunkt) " />
                         </div>
 
                         <div className="subsection">
@@ -156,7 +216,7 @@ export default function Bachelorarbeit() {
                                 Idee befragt und um Feedback gebeten. Diese Vorgehensweise wurde in jeder 
                                 Iteration wiederholt, um noch während des Designprozesses Feedback des Nutzers 
                                 einbeziehen zu können." />
-                            <Carousel imgs={carousel1Data} />
+                            <Carousel data={carousel1Data} />
                         </div>
 
                         <div className="subsection">
@@ -165,7 +225,7 @@ export default function Bachelorarbeit() {
                                 mit dem Programm Figma erstellt. Ziel der Wireframes war es Verbesserungen einzuarbeiten 
                                 und erneut bewerten zu lassen, ohne dass die Testpersonen dabei über visuelle Details 
                                 diskutieren, sondern das Konzept und die Inhalte der Anwendung bewerten." />
-                            <Carousel imgs={carousel2Data} />
+                            <Carousel data={carousel2Data} />
                         </div>
 
                         <div className="subsection">
@@ -173,7 +233,7 @@ export default function Bachelorarbeit() {
                             <Textblock text="Erst in der finalen vierten Iteration wurde die Anwendung visuell ausgestaltet. 
                                 Dazu wurde eine Farbpalette definiert, Schriftarten wurden festgelegt, ein 
                                 Logo wurde erstellt und weitere Ressourcen wurden festgehalten. " />
-                            <Carousel imgs={carousel3Data} />
+                            <Carousel data={carousel3Data} />
                         </div>
                           
                           

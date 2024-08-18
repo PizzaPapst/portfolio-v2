@@ -53,11 +53,16 @@
 
 .carousel--imageContainer{
     width: 100%;
-    height: 588px;
+    height: 610px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 0 8px;
+
+    p{
+        width: 100%;
+    }
 }
 
 

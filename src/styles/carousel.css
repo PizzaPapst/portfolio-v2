@@ -36,6 +36,11 @@
     cursor: pointer;
 }
 
+.carousel--dot:focus-visible{
+    border: 2px solid var(--border-focused);
+    outline: none;
+}
+
 .carousel--dot--active{
     width: 16px;
     height: 16px;
@@ -43,6 +48,11 @@
     background: linear-gradient(90deg, var(--surface-project1-start), var(--surface-project1-end));
     border-radius: 16px;
     cursor: pointer;
+}
+
+.carousel--dot--active:focus-visible{
+    border: 2px solid var(--border-project1-focused);
+    outline: none;
 }
 
 .carousel--image{

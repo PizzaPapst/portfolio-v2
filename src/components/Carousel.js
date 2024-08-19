@@ -8,7 +8,7 @@ function Carousel(props) {
 
   const dots = data.map((img, imgIndex)=>{
     return (
-        <button onClick={()=>jumpToImg(imgIndex)} className={imgIndex === currentIndex ? "carousel--dot--active" : "carousel--dot"}></button>
+        <button key={imgIndex} onClick={()=>jumpToImg(imgIndex)} className={imgIndex === currentIndex ? "carousel--dot--active" : "carousel--dot"}></button>
     )
   })
 
@@ -34,7 +34,7 @@ function Carousel(props) {
     <div>
         <div className='carousel--imageContainer'>
           <p className='Subinfo'>{data[currentIndex].desc}</p>
-          <img src={data[currentIndex].url} className='carousel--image'/>
+          <img src={data[currentIndex].url} alt={data[currentIndex].desc} className='carousel--image'/>
         </div>
         <div className='carousel-dots-container'>
           <IconButton icon="fa-solid fa-arrow-left" handleClick={goToPrev} iconColor="#666666"/>

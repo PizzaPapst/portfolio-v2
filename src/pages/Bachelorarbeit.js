@@ -16,67 +16,55 @@ export default function Bachelorarbeit() {
     // Carousel data
     const carousel1Data = [
         {
-            url: "bachelorarbeit/Iteration1-1.jpg",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I11.jpg",
+            desc: "1. Iteration - Dashboard"   
         },
         {
-            url: "bachelorarbeit/Iteration1-2.jpg",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I12.jpg",
+            desc: "1. Iteration - Zeitbasierte Erinnerung"   
         },
         {
-            url: "bachelorarbeit/Iteration1-3.jpg",
-            desc: "Dashboard"   
-        },
-        {
-            url: "bachelorarbeit/Iteration1-4.jpg",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I13.jpg",
+            desc: "1. Iteration - Einstellungen"   
         }
     ]
 
     const carousel2Data = [
         {
-            url: "bachelorarbeit/Iteration3-1.png",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I31.jpg",
+            desc: "2. Iteration - Dashboard"   
         },
         {
-            url: "bachelorarbeit/Iteration3-2.png",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I32.jpg",
+            desc: "2. Iteration - Zeitbasierte Erinnerung"   
         },
         
-        {url: "bachelorarbeit/Iteration3-3.png",
-            desc: "Dashboard"   
-        },
-        {
-            url: "bachelorarbeit/Iteration3-4.png",
-            desc: "Dashboard"   
-        },
+        {url: "bachelorarbeit/I33.jpg",
+            desc: "2. Iteration - Einstellungen"   
+        }
     ]
 
     const carousel3Data = [
         {
-            url: "bachelorarbeit/Iteration4-1.png",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I41.jpg",
+            desc: "4. Iteration - Dashboard"   
         },
         {
-            url: "bachelorarbeit/Iteration4-2.png",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I42.jpg",
+            desc: "4. Iteration - Pausen Dialog"   
         },
         {
-            url: "bachelorarbeit/Iteration4-3.png",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I43.jpg",
+            desc: "4. Iteration - Video Dialog"   
         },
         {
-            url: "bachelorarbeit/Iteration4-4.png",
-            desc: "Dashboard"   
+            url: "bachelorarbeit/I44.jpg",
+            desc: "4. Iteration - Zeitbasierte Erinnerung"   
         },
         {
-            url: "bachelorarbeit/Iteration4-5.png",
-            desc: "Dashboard"   
-        },
-        {
-            url: "bachelorarbeit/Iteration4-6.png",
-            desc: "Dashboard"   
-        },
+            url: "bachelorarbeit/I45.jpg",
+            desc: "4. Iteration - Einstellungen"   
+        }
     ]
     // Download function for the primaryButton
     function downloadBachelorarbeit(){
@@ -137,7 +125,7 @@ export default function Bachelorarbeit() {
                              “Sitzen ist das neue Rauchen” vor, sich einen Handytimer oder eine Stoppuhr zu stellen, um die 
                              eigene Sitzzeit im Blick zu behalten. Dies brachte mich auf die Idee, eine bessere Methode dafür 
                              zu finden." />
-                             <img className="kelly" src={kellyStarret} />
+                             <img className="kelly" src={kellyStarret} alt="Buchcover von Sitzen ist das neue Rauchen"/>
                         </div>
                     </div>
                 </section>
@@ -252,8 +240,8 @@ export default function Bachelorarbeit() {
                                 Nutzer bei Verwendung der Anwendung speichert, um in einer abschließenden Evaluation 
                                 den Erfolg der Anwendung bewerten zu können." />
                                 <div style={({position: "relative"})}>
-                                    <img src={myCode} className="bachelorarbeit--myCodeImg" />
-                                    <img src={vsCodeLogo} className="bachelorarbeit--vsCodeImg" />
+                                    <img src={myCode} alt="Code Ausschnitt aus VsCode" className="bachelorarbeit--myCodeImg" />
+                                    <img src={vsCodeLogo} alt="VScode Logo" className="bachelorarbeit--vsCodeImg" />
                                 </div>
                             
                         </div>

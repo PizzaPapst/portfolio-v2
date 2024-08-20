@@ -7,7 +7,7 @@ function Footer() {
     }
 
     function handleMail(){
-        window.location.href = "mailto:example@example.com?subject=Betreff&body=Hier%20ist%20der%20vorausgefüllte%20Text";
+        window.location.href = "mailto:maik.bartels2@gmail.com?subject=&body=";
     }
 
     const footerStyle = {

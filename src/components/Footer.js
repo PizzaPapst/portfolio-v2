@@ -3,7 +3,7 @@ import IconButton from "./IconButton"
 
 function Footer() {
     function handleLinkedIn(){
-        window.open("https://www.google.com", "_blank");
+        window.open("https://www.linkedin.com/in/maik-bartels-ab9a8721a", "_blank");
     }
 
     function handleMail(){

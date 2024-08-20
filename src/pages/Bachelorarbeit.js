@@ -243,7 +243,6 @@ export default function Bachelorarbeit() {
                                     <img src={myCode} alt="Code Ausschnitt aus VsCode" className="bachelorarbeit--myCodeImg" />
                                     <img src={vsCodeLogo} alt="VScode Logo" className="bachelorarbeit--vsCodeImg" />
                                 </div>
-                            
                         </div>
 
 

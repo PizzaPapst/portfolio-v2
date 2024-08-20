@@ -116,16 +116,6 @@ section{
     filter: drop-shadow(2px 2px 16px rgba(0, 0, 0, 0.15));
 }
 
-.test{
-    display: inline-block;
-    width: 350px;
-    height: 250px;
-    background-color: aqua;
-    background-image: url(../images/myCode.png);
-    background-position: center;
-    background-size: cover;
-}
-
 .bachelorarbeit--kpis{
     display: flex;
     justify-content: center;

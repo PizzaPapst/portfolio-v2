@@ -70,6 +70,7 @@ nav{
 
 .selected .itemWrapper{
     border-top: 4px solid var(--border-selected);
+    padding-top: 0px;
 }
 
 .itemWrapper{
@@ -79,4 +80,5 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    padding: 4px 0;
 }

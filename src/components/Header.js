@@ -28,15 +28,3 @@ export default function Header() {
         </nav>
     )
 }
-
-/* function Link ({href, children}){
-    const path = window.location.pathname
-
-    return(
-        <li className={ path.includes(children) ? 'navItem selected' : "navItem"}>
-            <a href={href}>
-                {children}
-            </a>
-        </li>
-    )
-} */

@@ -60,6 +60,7 @@
     align-items: center;
     position: relative;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .Device{
@@ -72,26 +73,17 @@
     transform: scale(1.1666);
 }
 
-.ImgContainer:hover{
-    cursor: pointer;
-}
-
 .ImgContainer:active{
-    background-color: var(--surface-pressed);
+    
 }
 
 .ImgContainer:focus-visible{
-    border: 2px solid var(--border-project1-focused);
-    outline: none;
+    outline: 2px solid var(--border-project1-focused);
+    outline-offset: 0;
 }
 
 .ImgContainer:focus-visible .Device{
     transform: scale(1.1666);
-}
-
-.ImgContainer:focus-visible .ImgTitleContainer{
-    margin-left: -2px;
-    margin-top: -2px;
 }
 
 .ImgTitleContainer{

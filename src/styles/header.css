@@ -52,33 +52,20 @@ nav{
     padding: 4px;
 }
 
-.navItem:hover .itemWrapper{
+.navItem:hover{
     background-color: var(--surface-hover);
 }
 
-.navItem:active .itemWrapper{
+.navItem:active{
     background-color: var(--surface-pressed);
-    
 }
 
 .navItem:focus-visible {
     border: 2px solid var(--border-focused);
-    border-radius: 4px;
     outline: none;
-    padding: 2px;
 }
 
-.selected .itemWrapper{
+.selected{
     border-top: 4px solid var(--border-selected);
     padding-top: 0px;
-}
-
-.itemWrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    padding: 4px 0;
 }

@@ -15,13 +15,15 @@ export default function Header() {
                 <ul className="links">
                     <NavLink
                      to="/" 
-                     className={({isActive}) => isActive ? "navItem selected" : "navItem"}>
-                        <div className="itemWrapper">Work</div>
+                     className={({isActive}) => isActive ? "navItem selected" : "navItem"}
+                     >
+                        Work
                     </NavLink>
                     <NavLink
                      to="/about"
-                     className={({isActive}) => isActive ? "navItem selected" : "navItem"}>
-                        <div className="itemWrapper">About</div>
+                     className={({isActive}) => isActive ? "navItem selected" : "navItem"}
+                     >
+                        About
                     </NavLink>
                 </ul>
             </div>

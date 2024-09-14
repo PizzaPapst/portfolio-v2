@@ -6,6 +6,7 @@ import pencil from '../images/pencil.svg';
 import star from '../images/star.svg';
 import Avatar from '../components/Avatar'
 import Project1 from '../components/Project1'
+import Project2 from '../components/Project2'
 import '../styles/Work.css';
 import '../styles/textStyles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -42,6 +43,7 @@ function Work() {
       </div>
       <div className='Content'>
           <Project1/>
+          <Project2 />
       </div>
     </div>
   );

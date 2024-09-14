@@ -20,6 +20,8 @@
     --border-selected: var(--colors-neutrals-black-black-400);
     --surface-project1-start: var(--colors-blue-200);
     --surface-project1-end: var(--colors-blue-100);
+    --surface-project2-start: var(--colors-green-200);
+    --surface-project2-end: var(--colors-green-100);
     --text-onproject1: var(--colors-neutrals-grey-grey-600);
     --text-onproject1-subtitle: var(--colors-neutrals-grey-grey-500);
     --border-project1-focused: var(--colors-orange-100);

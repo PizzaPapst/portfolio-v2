@@ -1,0 +1,65 @@
+@import url("../resources/colorTokens.css");
+
+.p2-DividerProject{
+    width: 60px;
+    height: 6px;
+    background-color: var(--surface-project2-start);
+    
+}
+
+.p2-ImgContainer{
+    background: linear-gradient(90deg, var(--surface-project2-start), var(--surface-project2-end));
+    width: 620px;
+    height: 413px;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.variableImg{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: -40px;
+    bottom: -20px;
+    transform: rotate(-15deg);
+    transition: transform 400ms ease-in-out;
+}
+
+.cursor{
+    left: 480px;
+    top: 152px;
+    transform: rotate(-15deg);
+    position: absolute;
+}
+
+.p2-ImgTitleContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    left: 40px;
+    top: 242px;
+    width: 300px;
+}
+
+.variableIcon{
+    width: 36px;
+    position: absolute;
+    left: 146px;
+    transition: transform 400ms ease-in-out;
+}
+
+.p2-ImgContainer:hover .variableIcon{
+    transform: rotate(180deg);
+}
+
+.p2-ImgContainer:hover .variableImg{
+    transform: rotate(-15deg) scale(1.2);
+}
+
+

@@ -1,0 +1,30 @@
+.button{
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--surface-secondary-default);
+    padding: 0 16px;
+    border-radius: 4px;
+    border: none;
+    color: var(--text-default);
+    border: 1px solid var(--border-secondary-default);
+    font-size: 16px;
+    font-weight: medium;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--surface-secondary-hover);
+}
+
+.button:active{
+    background-color: var(--surface-secondary-pressed);
+    
+}
+
+.button:focus-visible {
+    border: 2px solid var(--border-focused);
+    outline: none;
+    padding: 14px;
+}

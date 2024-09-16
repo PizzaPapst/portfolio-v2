@@ -24,10 +24,13 @@
     position: absolute;
     width: 300px;
     height: auto;
-    right: -40px;
-    bottom: -20px;
+    right: -16px;
+    bottom: 0px;
     transform: rotate(-15deg);
     transition: transform 400ms ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0px 19px 37px 0px rgba(0, 0, 0, 0.21),
+                0px 0px 60px -8px rgba(0, 0, 0, 0.28);
 }
 
 .cursor{
@@ -60,6 +63,19 @@
 
 .p2-ImgContainer:hover .variableImg{
     transform: rotate(-15deg) scale(1.2);
+}
+
+.p2-ImgContainer:focus-visible .variableImg{
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.p2-ImgContainer:focus-visible .variableIcon{
+    transform: rotate(180deg);
+}
+
+.p2-ImgContainer:focus-visible{
+    outline: 2px solid var(--border-project2-focused);
+    outline-offset: 0;
 }
 
 

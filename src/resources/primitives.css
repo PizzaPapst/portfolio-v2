@@ -6,38 +6,50 @@
     --numbers-24: 24px;
     --numbers-32: 32px;
     --numbers-64: 64px;
-    --colors-neutrals-white-white-100: #ffffff;
-    --colors-neutrals-black-black-300: #1f2023;
-    --colors-neutrals-grey-grey-300: #666666;
-    --colors-neutrals-grey-grey-400: #3b3b3b;
     --numbers-14: 14px;
     --numbers-28: 28px;
     --numbers-20: 20px;
-    --colors-neutrals-black-black: #000000;
     --numbers-48: 48px;
-    --colors-neutrals-white-white-300: #fafafa;
     --numbers-36: 36px;
     --numbers-40: 40px;
-    --colors-neutrals-black-black-400: #131316;
-    --colors-transparency-white-10: #ffffff;
-    --colors-transparency-white-15: #ffffff;
-    --colors-neutrals-black-black-200: #2b2b2d;
-    --colors-neutrals-black-black-100: #363639;
-    --colors-blue-300: #0088f0;
     --numbers-999: 999px;
     --numbers-128: 128px;
+    --numbers-56: 56px;
+
+
+    --colors-neutrals-white-white-100: #ffffff;
+    --colors-neutrals-white-white-200: #fbfcfd;
+    --colors-neutrals-white-white-300: #fafafa;
+    
+    --colors-neutrals-grey-grey-100: #F5F5F7;
+    --colors-neutrals-grey-grey-200: #DEE2E6;
+    --colors-neutrals-grey-grey-300: #C8C8D2;
+    --colors-neutrals-grey-grey-400: #8E9193;
+    --colors-neutrals-grey-grey-500: #666666;
+    --colors-neutrals-grey-grey-600: #3B3B3B;
+    --colors-neutrals-grey-grey-700: #323333;
+    --colors-neutrals-grey-grey-800: #323333;
+
+    --colors-neutrals-black-black: #000000;
+    --colors-neutrals-black-black-100: #363639;
+    --colors-neutrals-black-black-200: #2b2b2d;
+    --colors-neutrals-black-black-300: #1f2023;
+    --colors-neutrals-black-black-400: #131316;
+
+    --colors-transparency-white-10: #ffffff;
+    --colors-transparency-white-15: #ffffff;
     --colors-transparency-neutral-400-10: #13131610;
     --colors-transparency-neutral-400-15: #13131615;
-    --numbers-56: 56px;
-    --colors-neutrals-grey-grey-500: #323333;
-    --colors-neutrals-grey-grey-600: #323333;
+    
     --colors-blue-200: #7cb9ef;
     --colors-blue-100: #9fd0fc;
+    --colors-blue-300: #0088f0;
+
     --colors-orange-100: #efb17b;
-    --colors-neutrals-grey-grey-100: #dee2e6;
-    --colors-neutrals-white-white-200: #fbfcfd;
-    --colors-neutrals-grey-grey-200: #8e9193;
+
     --colors-green-100: #77E5AB;
     --colors-green-200: #59CD90;
+
+    --colors-purple-100: #CA59CD;
 
 }

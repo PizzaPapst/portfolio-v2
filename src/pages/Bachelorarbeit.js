@@ -11,6 +11,8 @@ import kellyStarret from "../images/kelly-starret.webp"
 import Carousel from "../components/Carousel";
 import KPI from "../components/KPI";
 import PrimaryButton from "../components/PrimaryButton";
+import Button from '../components/Button';
+
 
 export default function Bachelorarbeit() {
     // Carousel data
@@ -88,7 +90,6 @@ export default function Bachelorarbeit() {
                 <img className="hero--device" alt="" src={device}/>
             </div>
             <div className="bachelor--content">    
-
                 <section className="section--default">
                     <div className="section--content">
                         <h1>Entwicklung einer Anwendung zur Förderung von Bewegungspausen bei sitzender Tätigkeit</h1>
@@ -283,8 +284,9 @@ export default function Bachelorarbeit() {
                                 Nudging (Methodik, um das ausführen einer Handlung wahrscheinlicher zu machen). 
                                 Interessiert dich eines davon oder möchtest du die komplette Bachelorarbeit lesen, kannst du 
                                 diese herunterladen." />
-                        </div>
+                            <Button text="Zur Startseite" handleClick={()=>{}}/>
                             <PrimaryButton text="Bachelorarbeit herunterladen" handleClick={downloadBachelorarbeit}/>
+                        </div>
                     </div>
                 </section>
             </div>

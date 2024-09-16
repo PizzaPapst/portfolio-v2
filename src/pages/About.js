@@ -6,6 +6,10 @@ import Fotogrid from "../components/Fotogrid";
 
 export default function About() {
 
+    React.useEffect(()=>{
+        window.scrollTo(0,0)
+    }, [])
+
     const fotos = [
         {
             url: "about/about0.jpeg",

@@ -15,6 +15,11 @@ import { useNavigate } from 'react-router-dom';
 
 function DesignSystem() {
   const navigate = useNavigate();
+
+  React.useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <div className='designsystem'>
         <div className="ds-hero">
@@ -120,9 +125,9 @@ function DesignSystem() {
                   musste ich auch schon häufiger mit Design Systemen arbeiten, die anders aufgebaut waren.
                   Abschließend habe ich die Website mit React umgesetzt.
                 </p>  
-                <Button text="Zur Startseite" hanndleClick={()=>{
+                <Button text="Zur Startseite" handleClick={()=>{
                   console.log("Hallo Test");
-                  
+                  navigate("/")
                 }}/>
               </div>
             </div>

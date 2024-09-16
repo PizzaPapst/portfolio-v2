@@ -1,3 +1,4 @@
+import React from "react"
 import fire from '../images/fire.svg';
 import ai from '../images/ai.svg';
 import cloud from '../images/cloud.svg';
@@ -17,6 +18,11 @@ library.add(fas, fab)
 
 
 function Work() {
+  
+  React.useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
+  
   return (
     <div className="Work">
       <div className='Intro'>

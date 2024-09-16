@@ -12,9 +12,12 @@ import Carousel from "../components/Carousel";
 import KPI from "../components/KPI";
 import PrimaryButton from "../components/PrimaryButton";
 import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
+
 
 
 export default function Bachelorarbeit() {
+    const navigate = useNavigate();
     // Carousel data
     const carousel1Data = [
         {
@@ -284,8 +287,14 @@ export default function Bachelorarbeit() {
                                 Nudging (Methodik, um das ausführen einer Handlung wahrscheinlicher zu machen). 
                                 Interessiert dich eines davon oder möchtest du die komplette Bachelorarbeit lesen, kannst du 
                                 diese herunterladen." />
-                            <Button text="Zur Startseite" handleClick={()=>{}}/>
+                            
+                            <div style={{display: "flex", gap:"8px"}}>
+                            <Button text="Zur Startseite" handleClick={()=>{
+                                console.log("Hallo Test");
+                                navigate("/")}}
+                            />
                             <PrimaryButton text="Bachelorarbeit herunterladen" handleClick={downloadBachelorarbeit}/>
+                            </div>
                         </div>
                     </div>
                 </section>

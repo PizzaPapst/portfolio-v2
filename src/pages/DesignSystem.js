@@ -34,7 +34,7 @@ function DesignSystem() {
               <div className="subsection">
                 <SubHeadline text="Zusammenfassung" />
                 <Textblock text="Während der Erstellung dieser Website kam die Idee, ein beispielhaftes Design System aufzubauen. Dieses Design System wurde in Figma erstellt und enthält alle Komponenten dieser Internetseite. Die Case Study zeigt die Grundlegende Organisation des Design Systems, inklusive Tokens, Layout, Typographie, Bilder, Icons, etc." />
-                <p>Das Design System kann unter <a href=''>diesem Link zur Figma Datei</a> eingesehen werden.</p>
+                <p>Das Design System kann unter <a>diesem Link zur Figma Datei</a> eingesehen werden.</p>
               </div>
               <div className="subsection">
                 <SubHeadline text="Rolle" />
@@ -67,7 +67,7 @@ function DesignSystem() {
                 <SubHeadline text="Seitenaufteilung (Pages)" />
                 <Textblock text="Für meinen Privaten Gebrauch benutze ich die Figma free Version, weshalb ich auf 3 Seiten pro Datei beschränkt bin. Auf der ersten Seite befinden sich die Screens und das Layout der Website. Die zweite Seite beinhaltet alle Ressourcen, welche für die Vollendung des Designs benötigt wurden. Die dritte Seite dient zur Spezifikation aller Komponenten, sowie zur Darstellung bestimmter Verhaltensweisen einzelner Elemente oder Funktionalitäten. "/>
                 <div className='imgContainer end'>
-                  <img style={{width: "100%", maxWidth: "491px"}} src={pages} />
+                  <img alt="" style={{width: "100%", maxWidth: "491px"}} src={pages} />
                 </div>
               </div>
               <div className="subsection">
@@ -77,20 +77,20 @@ function DesignSystem() {
                 <Textblock text="Um die Design Tokens in Figma zu implementieren, habe ich folgende Variablenstruktur verwendet: "/>
                 <Textblock text="Primitives: enthalten alle Farb-, Numerischen- und sonstigen Werte, welche in der Anwendung vorkommen. Für Farben wird eine Farbrampe mit 100er Abstufungen für die Namensgebung verwendet. Beispielhafter Aufbau:"/>
                 <div className='imgContainer'>
-                  <img style={{width: "100%"}} src={rampe} />
+                  <img alt="" style={{width: "100%"}} src={rampe} />
                 </div>
                 <Textblock text="Color/Numeric Tokens: Definieren eine neue abstrakte (semantische) Ebene. jeder Token, der für ein bestimmte Designentscheidung steht, referenziert auf einen Primitiven Wert. Dabei sollte vorallem darauf geachtet werden, welche Namensgebung verwendet wird. Ich habe mich für folgende Struktur entschieden:"/>
                 <Textblock text="Es gibt vier Unterkategorien, “surface”, “border”, “text” und “icon”. Innerhalb jeder Unterkategorie gibt es weitere Rollen wie zum Beispiel “primary”, “secondary”, “success”, “error”, etc. Zu Jeder Rolle können dann Zustände dazukommen, wie “default”, “hover”, “pressed”, “focused”, etc. "/>
                 <div className='imgContainer'>
-                  <img style={{width: "100%", maxWidth: "554px"}} src={structure} />
+                  <img alt="" style={{width: "100%", maxWidth: "554px"}} src={structure} />
                 </div>
                 <Textblock text="Bei der Anwendung auf eine Komponente, zum Beispiel ein PrimaryButton entsteht damit folgende Verknüpfung zwischen Primitive Values und Color Tokens."/>
                 <div className='imgContainer'>
-                  <img style={{width: "100%", maxWidth: "284px"}} src={example} />
+                  <img alt='' style={{width: "100%", maxWidth: "284px"}} src={example} />
                 </div>
                 <Textblock text="Wie bereits erwähnt, kann nicht alles in Variablen gespeichert werden. Für diese Fälle werden Styles verwendet. Dies ist beispielsweise für Shadows/Blurs, für Farbverläufe und für Text notwendig. Auch dort wird dieselbe Namensgebung verwendet, wie für die Tokens."/>
                 <div className='imgContainer end'>
-                  <img style={{width: "100%", maxWidth: "330px", border: "1px solid black"}} src={styles} />
+                  <img alt='' style={{width: "100%", maxWidth: "330px", border: "1px solid black"}} src={styles} />
                 </div>
               </div >
             </div>
@@ -109,7 +109,7 @@ function DesignSystem() {
                   <li>Für bestimmte Szenarien oder komplexere Interaktionen können weitere Beispiele erforderlich sein, wie zum Beispiel Animationen bei Interaktionen oder Overflow-States, um ein besseres Verständnis über das Verhalten der Komponente zu schaffen </li>
                 </ol>
                 <div className='imgContainer end'>
-                  <img style={{width: "100%", maxWidth: "800px", border: "1px solid black"}} src={button} />
+                  <img alt='' style={{width: "100%", maxWidth: "800px", border: "1px solid black"}} src={button} />
                 </div>
               </div>
             </div>

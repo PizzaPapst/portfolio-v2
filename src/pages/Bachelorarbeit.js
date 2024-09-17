@@ -13,6 +13,7 @@ import KPI from "../components/KPI";
 import PrimaryButton from "../components/PrimaryButton";
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
+import BackToTop from "../components/BackToTop";
 
 
 
@@ -89,6 +90,7 @@ export default function Bachelorarbeit() {
 
     return (
         <div className="bachelorarbeit">
+            <BackToTop />
             <div className="hero">
                 <img className="hero--device" alt="" src={device}/>
             </div>

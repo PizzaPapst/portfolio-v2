@@ -3,7 +3,7 @@ import '../styles/project2.css'
 import { Link } from "react-router-dom";
 import variableImg from '../images/VariableImg.png';
 import cursor from '../images/Cursor.png';
-import variableIcon from '../images/VariableIcon24px.png';
+import variableIcon from '../images/VariableIcon.svg';
 
 export default function Project() {
     return (

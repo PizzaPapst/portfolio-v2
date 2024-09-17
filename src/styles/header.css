@@ -50,14 +50,15 @@ nav{
     text-decoration: none;
     color: var(--text-default);
     padding: 4px;
+    background-color: var(--tertiary-default);
 }
 
 .navItem:hover{
-    background-color: var(--surface-hover);
+    background-color: var(--tertiary-hover);
 }
 
 .navItem:active{
-    background-color: var(--surface-pressed);
+    background-color: var(--tertiary-pressed);
 }
 
 .navItem:focus-visible {

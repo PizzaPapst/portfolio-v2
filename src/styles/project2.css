@@ -34,6 +34,7 @@
 }
 
 .cursor{
+    width: 106px;
     left: 480px;
     top: 152px;
     transform: rotate(-15deg);
@@ -51,9 +52,10 @@
 }
 
 .variableIcon{
-    width: 36px;
+    width: 24px;
     position: absolute;
-    left: 146px;
+    left: 152px;
+    top: 4px;
     transition: transform 400ms ease-in-out;
 }
 
@@ -78,4 +80,11 @@
     outline-offset: 0;
 }
 
+.ImgTitle{
+    color: var(--text-onproject1);
+}
+
+.SubTitle{
+    color: var(--text-onproject1-subtitle);
+}
 

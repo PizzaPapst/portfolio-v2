@@ -1,23 +1,5 @@
 @import url("../resources/colorTokens.css");
 
-.carousel-next-btn{
-    color: black;
-    z-index: 1;
-    cursor: pointer;
-    border: none;
-    font-size: 32px;
-    background-color: transparent;
-}
-
-.carousel-prev-btn{
-    color: black;
-    z-index: 1;
-    cursor: pointer;
-    border: none;
-    font-size: 32px;
-    background-color: transparent;
-}
-
 .carousel-dots-container{
     width: 100%;
     padding: 8px 0;
@@ -31,9 +13,18 @@
     width: 12px;
     height: 12px;
     border: none;
-    background-color: var(--colors-neutrals-grey-grey-100);
+    background-color: var(--surface-secondary-default);
+    border: 1px solid var(--border-secondary-default);
     border-radius: 12px;
     cursor: pointer;
+}
+
+.carousel--dot:hover{
+    background-color: var(--surface-secondary-hover);
+}
+
+.carousel--dot:active{
+    background-color: var(--surface-secondary-pressed);
 }
 
 .carousel--dot:focus-visible{

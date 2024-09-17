@@ -5,17 +5,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background-color: transparent;
+    background-color: var(--tertiary-default);
     border: none;
     cursor: pointer;
 }
 
 .iconButton:hover{
-    background-color: var(--surface-hover);
+    background-color: var(--tertiary-hover);
 }
 
 .iconButton:active{
-    background-color: var(--surface-pressed);
+    background-color: var(--tertiary-pressed);
     
 }
 

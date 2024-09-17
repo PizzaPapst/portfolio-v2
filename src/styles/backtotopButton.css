@@ -1,0 +1,26 @@
+.backtotop-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: var(--surface-secondary-default);
+    color: var(--text-default);
+    border: 1px solid var(--border-secondary-default);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .backtotop-btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--surface-secondary-hover);
+  }
+  

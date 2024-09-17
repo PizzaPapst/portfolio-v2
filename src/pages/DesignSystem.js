@@ -12,6 +12,7 @@ import styles from '../images/styles.jpg';
 import button from '../images/button.jpg';
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
+import BackToTop from "../components/BackToTop";
 
 function DesignSystem() {
   const navigate = useNavigate();
@@ -134,6 +135,7 @@ function DesignSystem() {
           </section>
 
         </div>
+        <BackToTop />
     </div>
   )
 }

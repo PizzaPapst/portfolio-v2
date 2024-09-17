@@ -90,7 +90,7 @@ export default function Bachelorarbeit() {
 
     return (
         <div className="bachelorarbeit">
-            <BackToTop />
+            
             <div className="hero">
                 <img className="hero--device" alt="" src={device}/>
             </div>
@@ -301,6 +301,7 @@ export default function Bachelorarbeit() {
                     </div>
                 </section>
             </div>
+            <BackToTop />
         </div>
     )
 }

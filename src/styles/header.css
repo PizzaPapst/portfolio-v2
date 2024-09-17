@@ -63,6 +63,7 @@ nav{
 .navItem:focus-visible {
     border: 2px solid var(--border-focused);
     outline: none;
+    padding: 4px;
 }
 
 .selected{

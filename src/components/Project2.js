@@ -54,7 +54,7 @@ export default function Project() {
                         <img className="variableIcon" alt="icon" src={variableIcon}/>
                     </div> 
             </Link> : 
-            <Link to="/bachelorarbeit" className="img">
+            <Link to="/designsystem" className="img">
                 <img alt="project1thumbnail" className="" src={ds} style={{width: "100%"}}/>
             </Link>
             }

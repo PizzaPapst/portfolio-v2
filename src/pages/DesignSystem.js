@@ -127,7 +127,6 @@ function DesignSystem() {
                   Abschließend habe ich die Website mit React umgesetzt.
                 </p>  
                 <Button text="Zur Startseite" handleClick={()=>{
-                  console.log("Hallo Test");
                   navigate("/")
                 }}/>
               </div>

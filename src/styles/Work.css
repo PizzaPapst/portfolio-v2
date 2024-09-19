@@ -11,7 +11,6 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-
 }
 
 .Intro{
@@ -105,4 +104,35 @@
 .cloud{
   top: 308px;
   left: 547.5px;
+}
+
+@media only screen and (max-width: 1076px) {
+  .star{
+    display: none;
+
+  }
+  
+  .gear{
+    display: none;
+
+  }
+  
+  .fire{
+    display: none;
+
+  }
+  
+  .ai{
+    display: none;
+
+  }
+  
+  .pencil{
+    display: none;
+
+  }
+  
+  .cloud{
+    display: none;
+  }
 }

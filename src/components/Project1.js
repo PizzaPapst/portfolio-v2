@@ -7,11 +7,11 @@ import bachelorarbeit from '../images/bachelorarbeit.jpg';
 
 
 export default function Project() {
-    const [isScreenWide, setIsScreenWide] = useState(window.innerWidth > 1000);
+    const [isScreenWide, setIsScreenWide] = useState(window.innerWidth > 1076);
 
     useEffect(() => {
         const handleResize = () => {
-          const isWide = window.innerWidth > 1000;
+          const isWide = window.innerWidth > 1076;
           setIsScreenWide(isWide);
           // Wenn der Bildschirm schmaler als 800px ist, kombiniere beide Hälften zu einem
         };

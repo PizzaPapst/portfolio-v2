@@ -57,5 +57,13 @@
     .about-intro-img{
       display: none;
     }
+
+    .about-intro{
+      padding: 0;
+    }
+
+    .about-fotos{
+      padding: 0;
+    }
   }
   

@@ -44,10 +44,9 @@ export default function About() {
                     <img className="about-intro-img" alt="Maik" src={aboutImg}/>
                     <div className="about-intro-text">
                         <h2>Hi, ich bin Maik 👋</h2>
-                        <p>Moin zusammen, ich bin 25 Jahre alt und wohne aktuell in Hamburg. In meiner Freizeit betreibe oder schaue ich gerne Sport.</p>
-                        <p>Aktuell absolviere ich meinen Master in Medieninformatik an der technischen Hochschule in Lübeck. Schwerpunkt liegt dabei auf Human-ComputerI-Interaction (HCI) und Interactive 3D. </p>
-                        <p>Mein Ziel ist es, Software zu gestalten, welche für jeden Menschen bedienbar ist. Die Ziele und Bedürfnisse der Nutzer sind dabei für mich das wichtigste beim designen. Besonders gefällt mir die Arbeit im Team. Was Teamwork bedeutet durfte ich bei der Bundeswehr lernen, wo ich vor dem start meines Studiums beschäftigt war.</p>
-                        <p>Möchtest du mehr über meinen Werdegang erfahren, gucke dir gerne meinen Lebenslauf an oder schreibe mir persönlich!</p>
+                        <p>Hey, ich bin 25 Jahre alt, wohne in Hamburg und liebe alles, was mit Sport zu tun hat – egal ob selbst aktiv oder als Zuschauer. Nebenbei mache ich meinen Master in Medieninformatik an der TH Lübeck, wo ich mich auf Human-Computer Interaction (HCI) und Interactive 3D spezialisiere.</p>
+                        <p>Mein Ziel? Software designen, die wirklich jeder bedienen kann. Dabei stehen für mich die Bedürfnisse der Nutzer immer im Mittelpunkt. Besonders gern arbeite ich im Team – Teamwork habe ich schon bei der Bundeswehr schätzen gelernt, wo ich vor dem Studium tätig war.</p>
+                        <p>Wenn du mehr über meinen Werdegang wissen willst, schau gerne in meinen Lebenslauf oder schreib mir einfach!</p>
                     </div>
                     
                 </div> 

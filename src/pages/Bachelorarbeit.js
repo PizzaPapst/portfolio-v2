@@ -2,8 +2,7 @@ import React from "react"
 import '../styles/textStyles.css';
 import '../styles/bachelorarbeit.css';
 import device from '../images/device.png';
-import vsCodeLogo from '../images/visualStudioIcon.png';
-import myCode from '../images/myCode.png';
+import myCode from '../images/code.png';
 import SubHeadline from "../components/SubHeadline"
 import Textblock from "../components/Textblock"
 import TableRow from "../components/TableRow";
@@ -90,7 +89,6 @@ export default function Bachelorarbeit() {
 
     return (
         <div className="bachelorarbeit">
-            
             <div className="hero">
                 <img className="hero--device" alt="" src={device}/>
             </div>
@@ -119,19 +117,22 @@ export default function Bachelorarbeit() {
 
                 <section className="section--alternation">
                     <div className="section--content">
-                        <h2>Hintergrund</h2>
-                        <div className="subsection background">
-                            <Textblock text="Ich war lange Zeit auf der Suche nach einem Thema für meine
-                             Bachelorarbeit und habe vieles überlegt, nichts sprach mich jedoch so richtig an.
-                             Einige Zeit später las ich in einem Buch eine spannende Geschichte.
-                             Collage Footballer klagten über Rückenschmerzen, obwohl sie die besten Athleten
-                             ihres Jahrgangs sind. Grund dafür waren extrem lange Zeiten, welche diese jungen 
-                             Männer mit spielen von Videospielen verbrachten. Um nicht dieselben gesundheitlichen probleme 
-                             wie diese Sportler zu bekommen schlug Kelly Starret, Autor des Buches 
-                             “Sitzen ist das neue Rauchen” vor, sich einen Handytimer oder eine Stoppuhr zu stellen, um die 
-                             eigene Sitzzeit im Blick zu behalten. Dies brachte mich auf die Idee, eine bessere Methode dafür 
-                             zu finden." />
-                             <img className="kelly" src={kellyStarret} alt="Buchcover von Sitzen ist das neue Rauchen"/>
+                        <div className="subsection">
+                            <h2>Hintergrund</h2>
+                            <div className="background">
+                                <Textblock text="Ich war lange Zeit auf der Suche nach einem Thema für meine
+                                Bachelorarbeit und habe vieles überlegt, nichts sprach mich jedoch so richtig an.
+                                Einige Zeit später las ich in einem Buch eine spannende Geschichte.
+                                Collage Footballer klagten über Rückenschmerzen, obwohl sie die besten Athleten
+                                ihres Jahrgangs sind. Grund dafür waren extrem lange Zeiten, welche diese jungen 
+                                Männer mit spielen von Videospielen verbrachten. Um nicht dieselben gesundheitlichen probleme 
+                                wie diese Sportler zu bekommen schlug Kelly Starret, Autor des Buches 
+                                “Sitzen ist das neue Rauchen” vor, sich einen Handytimer oder eine Stoppuhr zu stellen, um die 
+                                eigene Sitzzeit im Blick zu behalten. Dies brachte mich auf die Idee, eine bessere Methode dafür 
+                                zu finden." />
+                                <img className="kelly" src={kellyStarret} alt="Buchcover von Sitzen ist das neue Rauchen"/>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -236,19 +237,19 @@ export default function Bachelorarbeit() {
 
                 <section className="section--default">
                     <div className="section--content">
-                        <h2>Implementierung</h2>
-                        <div className="subsection bachelorarbeit--implementierung1">
-                            <Textblock text="Der Prototyp aus der vierten Iteration wurde mit Verwendung von 
-                                HTML, CSS, JavaScript und dem Framework D3.js implementiert. Es musste auf die 
-                                Systemarchitektur einer Google Chrome Erweiterung geachtet werden, um ein 
-                                lauffähiges Plugin entwickeln zu können. Eine Besonderheit die es bei der 
-                                Implementierung gab, war das Einbinden eines Daten Trackings, welches Eingaben der 
-                                Nutzer bei Verwendung der Anwendung speichert, um in einer abschließenden Evaluation 
-                                den Erfolg der Anwendung bewerten zu können." />
-                                <div style={({position: "relative"})}>
-                                    <img src={myCode} alt="Code Ausschnitt aus VsCode" className="bachelorarbeit--myCodeImg" />
-                                    <img src={vsCodeLogo} alt="VScode Logo" className="bachelorarbeit--vsCodeImg" />
-                                </div>
+                        <div className="subsection">
+                            <h2>Implementierung</h2>
+                            <div className="bachelorarbeit--implementierung1">
+                                <Textblock text="Der Prototyp aus der vierten Iteration wurde mit Verwendung von 
+                                    HTML, CSS, JavaScript und dem Framework D3.js implementiert. Es musste auf die 
+                                    Systemarchitektur einer Google Chrome Erweiterung geachtet werden, um ein 
+                                    lauffähiges Plugin entwickeln zu können. Eine Besonderheit die es bei der 
+                                    Implementierung gab, war das Einbinden eines Daten Trackings, welches Eingaben der 
+                                    Nutzer bei Verwendung der Anwendung speichert, um in einer abschließenden Evaluation 
+                                    den Erfolg der Anwendung bewerten zu können." />
+                                
+                                <img src={myCode} alt="Code Ausschnitt aus VsCode" className="bachelorarbeit--myCodeImg" />    
+                            </div>
                         </div>
 
 

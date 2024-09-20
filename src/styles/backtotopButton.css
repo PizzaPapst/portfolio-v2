@@ -23,4 +23,11 @@
     transform: translateY(-2px);
     background-color: var(--surface-secondary-hover);
   }
+
+
+  @media (max-width: 800px) {
+    .backtotop-btn {
+      display: none;
+    }
+  }
   

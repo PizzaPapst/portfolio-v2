@@ -58,12 +58,14 @@ section{
 }
 
 .background{
+    display: flex;
     flex-direction: row;
     gap: 32px;
 }
 
 .kelly{
-    height: 235px;
+    width: 30%;
+    height: auto;
 }
 
 .table{
@@ -96,28 +98,57 @@ section{
 }
 
 .bachelorarbeit--implementierung1{
+    display: flex;
     flex-direction: row;
     gap: 32px;
     align-items: center;
 }
 
-.bachelorarbeit--myCodeImg{
-    width: 350px;
-    
-}
 
-.bachelorarbeit--vsCodeImg{
-    position: absolute;
-    left: 320px;
-    top: -40px;
-    width: 96px;
-    height: 96px;
-    transform: rotate(25deg);
-    filter: drop-shadow(2px 2px 16px rgba(0, 0, 0, 0.15));
+
+.bachelorarbeit--myCodeImg{
+    width: 40%;
+    height: auto;
+    margin-right: -40px;
+    margin-top: -40px;
 }
 
 .bachelorarbeit--kpis{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
 }
+
+
+@media only screen and (max-width: 800px) {
+
+    .hero--device{
+        width: 60%;
+    }
+    
+    section{
+        padding: 40px 32px;
+    }
+
+    .background{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .kelly{
+        width: 100%;
+        height: auto;
+    }
+
+    .bachelorarbeit--implementierung1{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .bachelorarbeit--myCodeImg{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+  }

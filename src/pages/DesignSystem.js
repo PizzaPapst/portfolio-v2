@@ -34,7 +34,7 @@ function DesignSystem() {
               <div className="subsection">
                 <SubHeadline text="Zusammenfassung" />
                 <Textblock text="Während der Erstellung dieser Website kam die Idee, ein beispielhaftes Design System aufzubauen. Dieses Design System wurde in Figma erstellt und enthält alle Komponenten dieser Internetseite. Die Case Study zeigt die Grundlegende Organisation des Design Systems, inklusive Tokens, Layout, Typographie, Bilder, Icons, etc." />
-                <p>Das Design System kann unter <a href='https://www.google.com/'>diesem Link zur Figma Datei</a> eingesehen werden.</p>
+                <p>Das Design System kann unter <a href='https://www.figma.com/design/ddsIIdEJtJser38nOvBO3n/Portfolio?node-id=12-10&node-type=canvas&t=2kSQWuLpocwhCYbv-0' target='_blank' rel="noopener noreferrer">diesem Link zur Figma Datei</a> eingesehen werden.</p>
               </div>
               <div className="subsection">
                 <SubHeadline text="Rolle" />

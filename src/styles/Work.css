@@ -14,7 +14,6 @@
 }
 
 .Intro{
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -23,32 +22,31 @@
   padding: 32px 0;
 }
 
-.Info-container{
-  position: relative;
+.Info-Title{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
+  gap: 16px;
 
-.Info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  h1{
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 .Title-location{
   display: flex;
   gap: 8px;
-  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .Divider{
-  width: 1px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: var(--surface-divider);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  width: 4px;
+  border-radius: 8px;
+  background-color: var(--text-accent);
 }
 
 .Location{
@@ -62,12 +60,17 @@
 }
 
 .Content{
-  background-color: var(--surface-bg-alternation);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 96px;
   padding: 32px;
+  justify-content: center;
+}
+
+.Cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 1200px;
 }
 
 .bg-icon{

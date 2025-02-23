@@ -1,13 +1,7 @@
 import React from "react"
-import fire from '../images/fire.svg';
-import ai from '../images/ai.svg';
-import cloud from '../images/cloud.svg';
-import gear from '../images/gear.svg';
-import pencil from '../images/pencil.svg';
-import star from '../images/star.svg';
-import Avatar from '../components/Avatar'
 import Project1 from '../components/Project1'
 import Project2 from '../components/Project2'
+import Card from "../components/Card";
 import '../styles/Work.css';
 import '../styles/textStyles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -26,30 +20,22 @@ function Work() {
   return (
     <div className="Work">
       <div className='Intro'>
-        <div className='Info-container'>
-          <Avatar></Avatar>
-          <img className="fire bg-icon" alt="" src={fire}/>
-          <img className="ai bg-icon" alt="" src={ai}/>
-          <img className="cloud bg-icon" alt="" src={cloud}/>
-          <img className="gear bg-icon" alt="" src={gear}/>
-          <img className="pencil bg-icon" alt="" src={pencil}/>
-          <img className="star bg-icon" alt="" src={star}/>
-          <div className='Info'>
-            <h1>Maik Bartels</h1>
-            <div className='Title-location'>
-              <p className='Subinfo'>UX Designer</p>
-              <div className='Divider'></div>
-              <div className='Location'>
-                <FontAwesomeIcon className='Subinfo' icon="fa-solid fa-location-dot" />
-                <p className='Subinfo'>Hamburg</p>  
-              </div>
-            </div>
+        <div className='Info-Title'>
+          <h1 className="Title">Hey✌🏼Ich bin Maik Willkommen auf meinem Portfolio</h1>
+          <div className='Title-location'>
+            <p className='Subinfo-h1'>UX Designer</p>
+            <div className='Divider'></div>
+            <p className='Subinfo-h1'>Hamburg</p>  
           </div>
+          
         </div>
       </div>
       <div className='Content'>
-          <Project1/>
-          <Project2 />
+        <div className="Cards">
+          <Card path="/about" text="Lorem Ipsum" color="#E1C0FF" rotation={3} project="Bachelorarbeit"/>
+          <Card path="/designsystem" text="Erstellung eines Design Systems in Figma" color="#9CE8A1" rotation={-2} project="Persönliches Projekt" />
+          <Card path="/bachelorarbeit" text="Entwicklung einer Anwendung zu Förderung von Bewegungspausen" color="#96DBFF" rotation={2} project="Bachelorarbeit" />
+        </div>
       </div>
     </div>
   );

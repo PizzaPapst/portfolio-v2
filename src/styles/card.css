@@ -1,0 +1,35 @@
+.card {
+    width: 280px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    transform: rotate(var(--rotation, 0deg)); /* Standard: 0 Grad */
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    transform: rotate(0deg);
+  }
+  
+  .card-project {
+    color: var(--text-subtitle);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+  .card-text {
+    font-family: "Raleway", serif;
+    color: var(--text-default);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+  

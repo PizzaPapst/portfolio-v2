@@ -44,6 +44,8 @@
     --colors-blue-200: #7cb9ef;
     --colors-blue-100: #9fd0fc;
     --colors-blue-300: #0088f0;
+    --colors-blue-800: #48586F;
+    --colors-blue-1000: #2A394E;
 
     --colors-orange-100: #efb17b;
 
@@ -51,5 +53,7 @@
     --colors-green-200: #59CD90;
 
     --colors-purple-100: #CA59CD;
+
+    --colors-Orange-100: #E5631A;
 
 }

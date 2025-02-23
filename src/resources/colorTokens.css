@@ -1,12 +1,13 @@
 @import url("primitives.css");
 
 :root{
-    --text-default: var(--colors-neutrals-black-300);
+    --text-default: var(--colors-blue-1000);
     --text-subinfo: var(--colors-neutrals-grey-500);
-    --text-subtitle: var(--colors-neutrals-grey-600);
+    --text-subtitle: var(--colors-blue-800);
     --text-onprimary: var(--colors-neutrals-white-100);
     --text-onproject1: var(--colors-neutrals-grey-800);
     --text-onproject1-subtitle: var(--colors-neutrals-grey-700);
+    --text-accent: var(--colors-Orange-100);
 
     --icon-default: var(--colors-neutrals-black-400);
     --icon-subinfo: var(--colors-neutrals-grey-500);
